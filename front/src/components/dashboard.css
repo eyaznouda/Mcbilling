@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2e3a4a;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar .active {
+  background: #4c5d75;
+  border-radius: 5px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.details-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.black {
+  background: black;
+}
+
+.card.blue {
+  background: #007bff;
+}
+
+.card.purple {
+  background: #6f42c1;
+}
+
+.card .value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .positive {
+  color: #28a745;
+}
+
+.card .negative {
+  color: #dc3545;
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+}
+
+.chart {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.graph-placeholder {
+  height: 100px;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.employees {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.progress {
+  width: 100px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: #007bff;
+}
+
+.fill.failed {
+  background: #dc3545;
+}
